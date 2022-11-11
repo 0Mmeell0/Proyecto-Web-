@@ -1,0 +1,191 @@
+/*.m {
+    width: 1000px;
+    padding: 20px; 
+    border: 5px solid gray;
+    margin: 0;
+    color: rgb(255, 240, 240);
+    background-color: pink;
+  }
+
+  body{
+    margin: 0;
+    box-sizing: content-box;
+    background-color: rgb(139, 204, 230);
+}
+
+.cabecera{
+    background-color:rgb(226, 160, 192);
+    padding : 20px;
+    display: flex;
+    justify-content: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    font-size: larger;
+}
+
+.menuA{
+    color:black;
+    text-decoration: none;
+    margin: 20px;
+    padding: 20px;
+}
+*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.contPagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(3 1fr)*/
+    grid-template-rows: 0.3fr 0,7fr repeat(9 1fr);
+    grid-template-areas: 
+    "menuPrinc menuPrinc menuPrinc"
+    "portada portada portada"
+    "parrafo0 parrafo0 parrafo0"
+    "titulo1 titulo1 titulo1"
+    "parrafo1 parrafo1 parrafo1"
+    "titulo2 titulo2 titulo2"
+    "parrafo2 parrafo2 parrafo2"
+    "titulo3 titulo3 titulo3"
+    "parrafo3 parrafo3 parrafo3"
+    "footer footer footer"
+    ;
+}
+
+.logoPrinc{
+    grid-area: menuPrinc;
+    width: 150px;
+    height: 110px;
+    z-index: 2;
+}
+
+.logo{
+    width: 100px;
+    height: 100px; 
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 50px;
+}
+
+
+.menu{
+    grid-area: menuPrinc;
+    width: 100%;   
+}
+
+nav {
+    height: 110px;
+    background-image: linear-gradient(rgb(249, 149, 149), rgb(104, 201, 233));
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.item{
+    margin:15px;
+    padding: 20px;
+}
+
+.linkNavegador {   
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+
+.portada{
+    grid-area: portada;
+    background-image: linear-gradient(rgb(104, 201, 233), white);
+    justify-content: center;
+    font-size: x-large;
+    display: flex;
+}
+
+.parrafo0{
+    grid-area: parrafo0;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.titulo1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo1;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo1;
+    font-size: larger;
+}
+
+.titulo2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo2;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo2;
+    font-size: larger;
+}
+
+.titulo3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo3;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo3;
+    font-size: larger;
+}
+
+
+
+.foot{
+    grid-area: footer;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(white,rgb(249, 149, 149), rgb(104, 201, 233));
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+}
+
+.lista{
+    margin:15px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    
+}

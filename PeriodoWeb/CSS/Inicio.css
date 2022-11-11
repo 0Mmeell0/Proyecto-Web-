@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.contPagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(3 1fr)*/
+    grid-template-rows: 0.3fr 0,7fr, 1fr 1fr, 1fr, 1fr, 1fr, 0,7fr;
+    grid-template-areas: 
+    "menuPrinc menuPrinc menuPrinc"
+    "portada portada portada"
+    "parrafo0 parrafo0 parrafo0"
+    "parrafo1 parrafo1 parrafo1"
+    "parrafo2 parrafo2 parrafo2"
+    "parrafo3 parrafo3 parrafo3"
+    "parrafo4 parrafo4 parrafo4"
+    "footer footer footer"
+    ;
+}
+
+.logoPrinc{
+    grid-area: menuPrinc;
+    width: 150px;
+    height: 110px;
+    z-index: 2;
+}
+
+.logo{
+    width: 100px;
+    height: 100px; 
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 50px;
+}
+
+
+.menu{
+    grid-area: menuPrinc;
+    width: 100%;   
+}
+
+nav {
+    height: 110px;
+    background-image: linear-gradient(rgb(249, 149, 149), rgb(104, 201, 233));
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.item{
+    margin:15px;
+    padding: 20px;
+}
+
+.linkNavegador {   
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+
+.portada{
+    grid-area: portada;
+    background-image: linear-gradient(rgb(104, 201, 233), white);
+    justify-content: center;
+    font-size: x-large;
+    display: flex;
+}
+
+.parrafo0{
+    grid-area: parrafo0;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.parrafo1{
+    grid-area: parrafo1;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.linkNavegador2{   
+    color: rgb(216, 121, 184);
+    font-size: x-large;
+    text-decoration:underline;
+}
+
+.parrafo2{
+    grid-area: parrafo2;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.linkNavegador3{   
+    color: rgb(216, 121, 184);
+    font-size: x-large;
+    text-decoration:underline;
+}
+
+.parrafo3{
+    grid-area: parrafo3;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.linkNavegador4{   
+    color: rgb(216, 121, 184);
+    font-size: x-large;
+    text-decoration:underline;
+}
+
+.parrafo4{
+    grid-area: parrafo4;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.linkNavegador5{   
+    color: rgb(216, 121, 184);
+    font-size: x-large;
+    text-decoration:underline;
+}
+
+
+.foot{
+    grid-area: footer;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(white,rgb(249, 149, 149), rgb(104, 201, 233));
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+}
+
+.lista{
+    margin:15px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    
+}

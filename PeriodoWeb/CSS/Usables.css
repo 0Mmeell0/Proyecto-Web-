@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.contPagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(3 1fr)*/
+    grid-template-rows: 0.3fr 0,7fr repeat(9 1fr);
+    grid-template-areas: 
+    "menuPrinc menuPrinc menuPrinc"
+    "portada portada portada"
+    "parrafo0 parrafo0 parrafo0"
+    "foto1 titulo1 titulo1"
+    "foto1 parrafo1 parrafo1"
+    "foto2 titulo2 titulo2"
+    "foto2 parrafo2 parrafo2"
+    "foto3 titulo3 titulo3"
+    "foto3 parrafo3 parrafo3"
+    "titulo4 titulo4 titulo4"
+    "parrafo4 parrafo4 parrafo4"
+    "footer footer footer"
+    ;
+}
+
+.logoPrinc{
+    grid-area: menuPrinc;
+    width: 150px;
+    height: 110px;
+    z-index: 2;
+}
+
+.logo{
+    width: 100px;
+    height: 100px; 
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 50px;
+}
+
+
+.menu{
+    grid-area: menuPrinc;
+    width: 100%;   
+}
+
+nav {
+    height: 110px;
+    background-image: linear-gradient(rgb(249, 149, 149), rgb(104, 201, 233));
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content:center;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.item{
+    margin:15px;
+    padding: 20px;
+}
+
+.linkNavegador {   
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+}
+
+.portada{
+    grid-area: portada;
+    background-image: linear-gradient(rgb(104, 201, 233), white);
+    justify-content: center;
+    font-size: x-large;
+    display: flex;
+}
+
+.parrafo0{
+    grid-area: parrafo0;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.producto{
+    width: 400px;
+    height: 300px; 
+    margin-left: 20px;
+    border-color: black;
+    border-style: solid;
+}
+
+.foto1{
+    grid-area: foto1;
+    margin:15px;
+}
+
+.titulo1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo1;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo1;
+    font-size: larger;
+    margin-top: 0px;
+}
+
+.foto2{
+    grid-area: foto2;
+    margin:15px;
+}
+
+.titulo2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo2;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo2;
+    font-size: larger;
+    margin-top: 0px;
+}
+
+
+.foto3{
+    grid-area: foto3;
+    margin:15px;
+}
+
+.titulo3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo3;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo3;
+    font-size: larger; 
+    margin-top: 0px;
+}
+
+
+.titulo4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: titulo4;
+    font-size: x-large;
+    text-align: center;
+    border-style: double;
+}
+
+.p4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 30px;
+    grid-area: parrafo4;
+    font-size: larger;
+}
+
+
+.foot{
+    grid-area: footer;
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(white,rgb(249, 149, 149), rgb(104, 201, 233));
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    align-items: center;
+}
+
+.lista{
+    margin:15px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+/*
+<div class="foto1">
+          <img class = "toallita" src="/Images/toalla.jpg" alt="">
+        </div>
+
+        <div class="parrafo1">
+            <h1>TOALLITA</h1>
+            <p>Empezando con el método más común, podemos decir que las toallas menstruales son pequeñas piezas hechas de un material absorbente que se adhieren en nuestra ropa interior. Existen muchos tipos de toallas, entre las cuales se encuentran las nocturnas, las diarias, con o sin alas, entre muchisimas otras.
+               Es probable que cualquier conocida tuya tenga una de estas, pues es común debido a su precio relativamente moderado y su facilidad de uso, ya que para ponernos una simplemente debemos seguir dos pasos:
+               <ul>
+                  1- Abrir la toallita y quitarle el papel que viene adherido a la misma. En caso de tener alitas, remover los de estas también. Si te estás cambiando una toallita usada, es importante envolverla en estos papeles por una cuestión de higiene personal.</ul>
+               <ul>2- Pegarla a nuestra ropa interior asegurandonos que la parte mas absorbente quede en el centro de nuestra vulva.</ul>
+                  
+            </p>
+        </div>
+*/
+
+
