@@ -9,13 +9,13 @@ Todas las visualizaciones fueron hechas con HTML y cada una tenía su respectivo
 
 En los archivos HTML se establece principalmente la estructura del sitio web, como los títulos, el pie de pág., parrafos, imágenes, etc. En resumen, es la base para armar el resto de la página. Predominan las siguientes etiquetas:
 
-+ <h1></h1>: funciona para establecer un título con el mayor tamaño permitido. Sus variables <h2>, <h3>, etc. hasta el <h6> van disminuyendo el tamaño.
-+ <div></div>: organiza el código creando un bloque al área de la página indicada con el fin de poder modificarla luego.
-+ <br></br>: al usarla al final de una línea, se deja un espacio entre esta y la siguiente
-+ <p></p>: permite escribir texto.
-+ <li></li>: con esta etiqueta se pueden organizar los elementos como una lista
-+ <img></img>: aquí se pueden ingresar imágenes. 
-+ <a></a>: junto con su atributo href, se hace referencia a otro documento, utilizado para enlaces.
++ h1: funciona para establecer un título con el mayor tamaño permitido. Sus variables <h2>, <h3>, etc. hasta el <h6> van disminuyendo el tamaño.
++ div: organiza el código creando un bloque al área de la página indicada con el fin de poder modificarla luego.
++ br: al usarla al final de una línea, se deja un espacio entre esta y la siguiente
++ p: permite escribir texto.
++ li: con esta etiqueta se pueden organizar los elementos como una lista
++ img: aquí se pueden ingresar imágenes. 
++ a: junto con su atributo href, se hace referencia a otro documento, utilizado para enlaces.
 
 
 En los archivos CSS se establecen principalmente las siguientes eqtiquetas:
